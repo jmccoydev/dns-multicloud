@@ -18,7 +18,7 @@ resource "aws_route53_zone" "aws_sub_zone" {
 
 resource "aws_route53_record" "aws_sub_zone_ns" {
   count = var.create_aws_dns_zone ? 1 : 0
-  zone_id = "${data.aws_route53_zone.main.zone_id}"
+  zone_id = "data.aws_route53_zone.main.zone_id"
   name    = "${var.namespace}.aws.${var.hosted-zone}"
   type    = "NS"
   ttl     = "30"
