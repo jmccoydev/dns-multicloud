@@ -26,7 +26,7 @@ variable "create_aws_dns_zone" {
 
 variable "aws_region" {
   description = "The region to create resources."
-  default     = "eu-west-2"
+  default     = "us-east-2"
 }
 
 # Azure
@@ -39,7 +39,7 @@ variable "create_azure_dns_zone" {
 
 variable "azure_location" {
   description = "The azure location to deploy the DNS service"
-  default     = "West Europe"
+  default     = "East US 2"
 }
 
 # GCP
@@ -56,5 +56,5 @@ variable "gcp_project" {
 
 variable "gcp_region" {
   description = "GCP region, e.g. us-east1"
-  default     = "europe-west3"
+  default     = "us-east4"
 }
